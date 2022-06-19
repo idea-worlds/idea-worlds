@@ -1,0 +1,31 @@
+.page {
+  box-sizing: border-box;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  background: var(--iws-page-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: var(--iws-header-height);
+  background: var(--iws-background-color);
+  margin-bottom: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.page-header {
+  width: 100%;
+  max-width: var(--iws-header-width);
+  line-height: var(--iws-header-height);
+  margin: 0 auto;
+}
+
+.page-main {
+  width: 100%;
+  max-width: var(--iws-main-width);
+  min-height: calc(~"100vh - var(--iws-header-height) - var(--iws-gap)");
+  margin: calc(~"var(--iws-header-height) + var(--iws-gap)") auto 0 auto;
+}
