@@ -1,0 +1,28 @@
+<div class="main default">
+  <div class="search-box">
+    <nz-input-group class="search" [nzSuffix]="tplSearchIcon">
+      <input #search_input type="text" nz-input
+             (keyup.enter)="search(search_input.value)"
+             (focus)="btn_box.style.display='none'"
+             (focusout)="btn_box.style.display='block'"
+      />
+    </nz-input-group>
+    <ng-template #tplSearchIcon>
+      <i nz-icon nzType="search"></i>
+    </ng-template>
+  </div>
+  <div #btn_box class="btn-box">
+    <button nz-button nzType="primary" nzShape="round">
+      发布创意
+    </button>
+  </div>
+</div>
+
+<div class="main xs">
+  <button nz-button nzType="text">
+    <i nz-icon nzType="search" nzTheme="outline"></i>
+  </button>
+  <button nz-button nzType="text">
+    <i nz-icon nzType="plus-circle" nzTheme="outline"></i>
+  </button>
+</div>

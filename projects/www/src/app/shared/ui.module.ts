@@ -122,4 +122,4 @@ const icons: IconDefinition[] = [
     NzTypographyModule
   ]
 })
-export class NgZorroModule { }
+export class UiModule { }

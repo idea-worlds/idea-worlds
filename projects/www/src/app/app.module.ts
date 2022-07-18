@@ -8,7 +8,8 @@ import zh from '@angular/common/locales/zh';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgZorroModule } from './shared/ng-zorro.module';
+import { FrameworkModule } from './framework/framework.module';
+import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 
 registerLocaleData(zh);
 
@@ -20,7 +21,8 @@ registerLocaleData(zh);
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    NgZorroModule
+    FrameworkModule,
+    NzBackTopModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
