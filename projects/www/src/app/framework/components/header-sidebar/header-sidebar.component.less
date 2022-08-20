@@ -1,0 +1,32 @@
+.main {
+  line-height: var(--iws-header-height);
+  padding: 0 8px;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: var(--iws-header-height);
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 0 0 0 8px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    height: var(--iws-header-height);
+    width: var(--iws-header-height);
+  }
+
+}
+

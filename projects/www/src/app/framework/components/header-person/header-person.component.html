@@ -1,0 +1,31 @@
+<div class="main">
+  <button *ngIf="isLoggedIn" nz-button nz-popover
+          nzPopoverTrigger="click"
+          nzPopoverPlacement="bottom"
+          [nzPopoverContent]="tplPerson">
+    <i nz-icon nzType="user" nzTheme="outline"></i>
+  </button>
+  <button *ngIf="!isLoggedIn" nz-button (click)="toLogin()">
+    <i nz-icon nzType="login" nzTheme="outline"></i>登录
+  </button>
+</div>
+
+<ng-template #tplPerson>
+  <div class="popover-content">
+    <div>
+      <button nz-button nzType="text" [nzBlock]="true" (click)="toPersonHome()">
+        <i nz-icon nzType="home" nzTheme="outline"></i>我的主页
+      </button>
+    </div>
+    <div>
+      <button nz-button nzType="text" [nzBlock]="true" (click)="toPersonSetting()">
+        <i nz-icon nzType="setting" nzTheme="outline"></i>账号设置
+      </button>
+    </div>
+    <div>
+      <button nz-button nzType="text" [nzBlock]="true" [nzDanger]="true" (click)="logout()">
+        <i nz-icon nzType="logout" nzTheme="outline"></i>退出登录
+      </button>
+    </div>
+  </div>
+</ng-template>

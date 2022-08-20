@@ -1,9 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --iws-gap: 16px;
-  --iws-page-color: #f0f2f5;
+  --iws-page-color: #f6f6f6;
   --iws-background-color: #ffffff;
   --iws-header-height: 50px;
-  --iws-header-width: 1200px;
-  --iws-main-width: 1000px;
+  --iws-header-max-width: 1200px;
+  --iws-main-max-width: 1000px;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --iws-gap: 12px;
+    --iws-header-height: 40px;
+  }
 }

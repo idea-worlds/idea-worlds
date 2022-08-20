@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  height: var(--iws-header-height);
+  padding: 0 var(--iws-gap);
+}
+
+@media (min-width: 576px ) {
+
+  .xs {
+    display: none;
+  }
+
+  .search-box {
+    flex: 1 1 auto;
+  }
+
+  .search {
+    background: var(--iws-page-color);
+    border-radius: 10px;
+
+    input {
+      background: inherit;
+    }
+  }
+
+  .btn-box {
+    flex: 0 0 100px;
+    margin-left: var(--iws-gap);
+  }
+
+}
+
+@media (max-width: 576px ) {
+
+  .default {
+    display: none;
+  }
+
+  button {
+    height: var(--iws-header-height);
+    width: var(--iws-header-height);
+  }
+
+  button > i {
+    font-size: 18px;
+  }
+
+}

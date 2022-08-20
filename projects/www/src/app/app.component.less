@@ -6,7 +6,7 @@
   background: var(--iws-page-color);
 }
 
-header {
+.page-header {
   position: fixed;
   width: 100%;
   height: var(--iws-header-height);
@@ -16,16 +16,9 @@ header {
   z-index: 100;
 }
 
-.page-header {
-  width: 100%;
-  max-width: var(--iws-header-width);
-  line-height: var(--iws-header-height);
-  margin: 0 auto;
-}
-
 .page-main {
   width: 100%;
-  max-width: var(--iws-main-width);
+  max-width: var(--iws-main-max-width);
   min-height: calc(~"100vh - var(--iws-header-height) - var(--iws-gap)");
   margin: calc(~"var(--iws-header-height) + var(--iws-gap)") auto 0 auto;
 }
